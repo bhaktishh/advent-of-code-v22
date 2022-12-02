@@ -12,4 +12,4 @@ part1 :: String -> Int
 part1 = maximum . total_list
 
 part2 :: String -> Int
-part2 = foldl (+) 0 . (take 3) . reverse . sort . total_list
+part2 = foldl (+) 0 . take 3 . reverse . sort . total_list
