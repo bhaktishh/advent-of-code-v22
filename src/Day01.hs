@@ -6,7 +6,7 @@ import Data.List.Split ( splitOn )
 import Data.List ( sort )
 
 total_list :: String -> [Int]
-total_list = (fmap (foldl (+) 0 . fmap read)) . (splitOn [""]) . lines 
+total_list = fmap (foldl (+) 0 . fmap read) . splitOn [""] . lines 
 
 part1 :: String -> Int
 part1 = maximum . total_list
