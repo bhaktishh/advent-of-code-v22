@@ -63,13 +63,57 @@ main' = do
     (x :: UWArgs) <- unwrapRecord $ T.pack "running advent of code solutions!"
     input <- getFile x
     case (day x, part x) of
-        (1,1) -> print $ Day01.part1 input
-        (1,2) -> print $ Day01.part2 input
-        (2,1) -> print $ Day02.part1 input
-        (2,2) -> print $ Day02.part2 input
-        (3,1) -> print $ Day03.part1 input
-        (3,2) -> print $ Day03.part2 input
-        _     -> print $ "no matching day/part"
+        (1,1)  -> print $ Day01.part1 input
+        (1,2)  -> print $ Day01.part2 input
+        (2,1)  -> print $ Day02.part1 input
+        (2,2)  -> print $ Day02.part2 input
+        (3,1)  -> print $ Day03.part1 input
+        (3,2)  -> print $ Day03.part2 input
+        (4,1)  -> print $ Day04.part1 input
+        (4,2)  -> print $ Day04.part2 input
+        (5,1)  -> print $ Day05.part1 input
+        (5,2)  -> print $ Day05.part2 input
+        (6,1)  -> print $ Day06.part1 input
+        (6,2)  -> print $ Day06.part2 input
+        (7,1)  -> print $ Day07.part1 input
+        (7,2)  -> print $ Day07.part2 input
+        (8,1)  -> print $ Day08.part1 input
+        (8,2)  -> print $ Day08.part2 input
+        (9,1)  -> print $ Day09.part1 input
+        (9,2)  -> print $ Day09.part2 input
+        (10,1) -> print $ Day10.part1 input
+        (10,2) -> print $ Day10.part2 input
+        (11,1) -> print $ Day11.part1 input
+        (11,2) -> print $ Day11.part2 input
+        (12,1) -> print $ Day12.part1 input
+        (12,2) -> print $ Day12.part2 input
+        (13,1) -> print $ Day13.part1 input
+        (13,2) -> print $ Day13.part2 input
+        (14,1) -> print $ Day14.part1 input
+        (14,2) -> print $ Day14.part2 input
+        (15,1) -> print $ Day15.part1 input
+        (15,2) -> print $ Day15.part2 input
+        (16,1) -> print $ Day16.part1 input
+        (16,2) -> print $ Day16.part2 input
+        (17,1) -> print $ Day03.part1 input
+        (17,2) -> print $ Day03.part2 input
+        (18,1) -> print $ Day18.part1 input
+        (18,2) -> print $ Day18.part2 input
+        (19,1) -> print $ Day19.part1 input
+        (19,2) -> print $ Day19.part2 input
+        (20,1) -> print $ Day20.part1 input
+        (20,2) -> print $ Day20.part2 input
+        (21,1) -> print $ Day21.part1 input
+        (21,2) -> print $ Day21.part2 input
+        (22,1) -> print $ Day22.part1 input
+        (22,2) -> print $ Day22.part2 input
+        (23,1) -> print $ Day23.part1 input
+        (23,2) -> print $ Day23.part2 input
+        (24,1) -> print $ Day24.part1 input
+        (24,2) -> print $ Day24.part2 input
+        (25,1) -> print $ Day25.part1 input
+        (25,2) -> print $ Day25.part2 input
+        _      -> print $ "no matching day/part"
             
 
     
