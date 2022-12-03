@@ -67,6 +67,8 @@ main' = do
         (1,2) -> print $ Day01.part2 input
         (2,1) -> print $ Day02.part1 input
         (2,2) -> print $ Day02.part2 input
+        (3,1) -> print $ Day03.part1 input
+        (3,2) -> print $ Day03.part2 input
         _     -> print $ "no matching day/part"
             
 

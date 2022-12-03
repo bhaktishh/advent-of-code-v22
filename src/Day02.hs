@@ -29,7 +29,7 @@ points_p2 str = case (str !! 0, str !! 2) of
     (_ , _)    -> 0
 
 part1 :: String -> Int
-part1 = foldl (+) 0 . map points_p1 . lines
+part1 = sum . map points_p1 . lines
 
 part2 :: String -> Int
-part2 = foldl (+) 0 . map points_p2 . lines
+part2 = sum . map points_p2 . lines
