@@ -18,7 +18,7 @@ rep2 (c0:c1:c2:_) = head $ filter (\x -> elem x c1 && elem x c2) c0
 rep2 _ = ' '
 
 part1 :: String -> Int
-part1 str = sum $ map priority $ map rep1 $ map (\x -> splitAt (div (length x) 2) x) $ lines str
+part1 = sum . map priority . map rep1 . map (\x -> splitAt (div (length x) 2) x) . lines
 
 part2 :: String -> Int
-part2 str = sum $ map priority $ map rep2 $ chunksOf 3 . lines $ str
+part2 = sum . map priority . map rep2 . chunksOf 3 . lines
