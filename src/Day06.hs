@@ -5,12 +5,13 @@ module Day06
 import Data.List.Split ( divvy )
 import Data.List (nub, findIndex )
 
-part1 :: String -> Int
-part1 str = case (findIndex (\x -> length x == 4) . map nub . divvy 4 1) str of
-    Just x -> x + 4
+find :: Int -> String -> Int
+find n str =  case (findIndex (\x -> length x == n) . map nub . divvy n 1) str of
+    Just x -> x + n
     Nothing -> 0
 
+part1 :: String -> Int
+part1 = find 4
+
 part2 :: String -> Int
-part2 str = case (findIndex (\x -> length x == 14) . map nub . divvy 14 1) str of
-    Just x -> x + 14
-    Nothing -> 0
+part2 = find 14
