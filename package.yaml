@@ -24,6 +24,7 @@ dependencies:
 - text
 - optparse-generic
 - split
+- megaparsec
 
 ghc-options:
 - -Wall
