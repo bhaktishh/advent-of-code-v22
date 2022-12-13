@@ -51,6 +51,7 @@ library
       Day23
       Day24
       Day25
+      Parsing
   other-modules:
       Paths_advent_of_code_v22
   hs-source-dirs:
@@ -73,6 +74,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , containers
     , megaparsec
     , optparse-generic
     , split
@@ -104,6 +106,7 @@ executable advent-of-code-v22-exe
   build-depends:
       advent-of-code-v22
     , base >=4.7 && <5
+    , containers
     , megaparsec
     , optparse-generic
     , split
@@ -136,6 +139,7 @@ test-suite advent-of-code-v22-test
   build-depends:
       advent-of-code-v22
     , base >=4.7 && <5
+    , containers
     , megaparsec
     , optparse-generic
     , split

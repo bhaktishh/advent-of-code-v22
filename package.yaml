@@ -25,6 +25,7 @@ dependencies:
 - optparse-generic
 - split
 - megaparsec
+- containers
 
 ghc-options:
 - -Wall

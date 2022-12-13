@@ -4,15 +4,11 @@ module Day05
 
 import Data.List.Split ( chunksOf )
 import Data.List ( transpose )
-import Data.Void ( Void ) 
+import Data.Void ( Void )
+import Parsing
 import Text.Megaparsec
 import Text.Megaparsec.Char
 import Data.Char ( isUpper, isDigit )
-
-type Parser = Parsec Void String
-
-integer :: Parser Int
-integer = read <$> some numberChar
 
 parseCrate :: Parser [Char]
 parseCrate = many (try (string "[" *> satisfy isUpper <* string "] ") 
