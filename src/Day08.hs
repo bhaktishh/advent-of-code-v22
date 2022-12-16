@@ -21,12 +21,12 @@ allIsVisible board = length $ filter (== True) $ map (isVisible board) (genTuple
 length' :: [Int] -> Int -> Int
 length' lst l = if length lst == l then length lst else length lst + 1 
 
-howManyVisible_ :: [Int] -> Int -> Int
-howManyVisible_ lst ind = let lt = (\x -> lst !! x < lst  !! ind) in
+howManyVisible :: [Int] -> Int -> Int
+howManyVisible lst ind = let lt = (\x -> lst !! x < lst  !! ind) in
     length' (takeWhile lt (reverse [0..ind-1])) ind * length' (takeWhile lt [ind+1..length lst - 1]) (length lst - ind - 1)
 
 scenicScore :: [[Int]] -> (Int, Int) -> Int
-scenicScore b (r,c) = (howManyVisible_ (b !! r) c) * (howManyVisible_ ((transpose b) !! c) r)
+scenicScore b (r,c) = (howManyVisible (b !! r) c) * (howManyVisible ((transpose b) !! c) r)
 
 maxScenic :: [[Int]] -> Int
 maxScenic board = maximum $ map (scenicScore board) (genTuples board)
