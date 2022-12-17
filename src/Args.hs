@@ -82,7 +82,7 @@ main' = do
         (9,1)  -> print $ Day09.part1 input
         (9,2)  -> print $ Day09.part2 input
         (10,1) -> print $ Day10.part1 input
-        (10,2) -> print $ Day10.part2 input
+        (10,2) -> putStrLn $ Day10.part2 input
         (11,1) -> print $ Day11.part1 input
         (11,2) -> print $ Day11.part2 input
         (12,1) -> print $ Day12.part1 input

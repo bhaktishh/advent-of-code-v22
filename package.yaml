@@ -24,8 +24,9 @@ dependencies:
 - text
 - optparse-generic
 - split
-- megaparsec
+- megaparsec >= 9.2.2
 - containers
+- MissingH
 
 ghc-options:
 - -Wall
